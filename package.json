@@ -1,0 +1,25 @@
+{
+  "name": "babelify-config",
+  "version": "1.0.0",
+  "description": "![meme](https://cdn.meme.am/cache/instances/folder817/400x/75390817.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickdoth/babelify-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickdoth/babelify-config/issues"
+  },
+  "homepage": "https://github.com/nickdoth/babelify-config#readme",
+  "dependencies": {
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.0.0"
+  }
+}
