@@ -2,8 +2,13 @@
 
 JUST PACK AND GO.
 
+*(...hopefully)*
+
 ```javascript
-  require('babelify-config')('index.jsx', 'bundle.js');
+  var pack = require('babelify-config');
+  pack('index.jsx', 'bundle.js');
+  // or
+  pack('client.jsx').pipe(res);
   // DONE
 ```
 
