@@ -1,8 +1,8 @@
 var fs = require("fs");
 var browserify = require("browserify");
 
-module.exports = function pack(input, output) {
-    var bundle = browserify(input)
+module.exports = function pack(input, output, opt) {
+    var bundle = browserify(input, opt)
         .transform("babelify", {presets: ["latest", "react"]})
         .bundle()
 
