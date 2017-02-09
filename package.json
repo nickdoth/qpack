@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickdoth/babelify-config.git"
+    "url": "git+https://github.com/nickdoth/qpack.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nickdoth/babelify-config/issues"
+    "url": "https://github.com/nickdoth/qpack/issues"
   },
-  "homepage": "https://github.com/nickdoth/babelify-config#readme",
+  "homepage": "https://github.com/nickdoth/qpack#readme",
   "dependencies": {
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
