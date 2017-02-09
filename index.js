@@ -1,7 +1,7 @@
 var fs = require("fs");
 var browserify = require("browserify");
 
-module.exports = function pack(input, output, opt) {
+function pack(input, output, opt) {
     var bundle = browserify(input, opt)
         .transform("babelify", {presets: ["latest", "react"]})
         .bundle()
@@ -13,3 +13,16 @@ module.exports = function pack(input, output, opt) {
         return bundle;
     }
 }
+
+pack.forNodejs = function(input, output) {
+    return pack(input, output, {
+        builtins: false,
+        commondir: false,
+        browserField: false,
+        insertGlobalVars: {
+            'process': undefined
+        }
+    });
+}
+
+module.exports = pack;
