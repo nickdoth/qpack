@@ -1,4 +1,4 @@
-# babelify-config
+# qpack
 
 JUST PACK AND GO.
 
