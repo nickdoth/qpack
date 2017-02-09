@@ -5,10 +5,10 @@ JUST PACK AND GO.
 *(...hopefully)*
 
 ```javascript
-  var pack = require('babelify-config');
-  pack('index.jsx', 'bundle.js');
+  var qpack = require('qpack');
+  qpack('index.jsx', 'bundle.js');
   // or
-  pack('client.jsx').pipe(res);
+  qpack('client.jsx').pipe(res);
   // DONE
 ```
 
