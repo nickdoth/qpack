@@ -8,7 +8,8 @@ function pack(input, output, opt) {
             plugins: ["transform-es2015-destructuring", "transform-object-rest-spread"]
         });
     if (process.env.NODE_ENV === 'production') {
-        bundle.transform('uglifyify');
+        console.log('production');
+        bundle.transform('uglifyify', { global: true });
     }
 
     if (output) {
