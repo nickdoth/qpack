@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "justpack": "./justpack.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickdoth/qpack.git"
@@ -22,6 +25,7 @@
     "babel-preset-env": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "babelify": "^7.3.0",
-    "browserify": "^14.0.0"
+    "browserify": "^14.0.0",
+    "commander": "^2.9.0"
   }
 }
