@@ -10,13 +10,12 @@ function pack(input, output, opt) {
     if (process.env.NODE_ENV === 'production') {
         bundle.transform('uglifyify');
     }
-    bundle.bundle();
 
     if (output) {
-        return bundle.pipe(fs.createWriteStream(output));
+        return bundle.bundle().pipe(fs.createWriteStream(output));
     }
     else {
-        return bundle;
+        return bundle.bundle();
     }
 }
 
