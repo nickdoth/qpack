@@ -3,11 +3,14 @@ var browserify = require("browserify");
 
 function pack(input, output, opt) {
     var bundle = browserify(input, opt)
-        .transform("babelify", {
+        .transform('babelify', {
             presets: ["env", "react"],
             plugins: ["transform-es2015-destructuring", "transform-object-rest-spread"]
-        })
-        .bundle();
+        });
+    if (process.env.NODE_ENV === 'production') {
+        bundle.transform('uglifyify');
+    }
+    bundle.bundle();
 
     if (output) {
         return bundle.pipe(fs.createWriteStream(output));
